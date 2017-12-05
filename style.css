@@ -1,0 +1,265 @@
+ /*
+ Theme Name: gdy-custom
+ Theme URI: __YOUR_DEVELOPMENT_URL_IF_APPLICABLE__
+ Author: Tasha Peterson
+ Author URI: __YOUR_WEBSITE_IF_APPLICALBE__
+ Description: custom theme for Good DYE Young 
+ Version: 1.0
+ Tags: 
+ */
+
+/*
+    what to do with photo tiles on look book page?
+    how do i get the last item in a grid to align left?
+    hamburger menu implementation for mobile stop?
+    is checkout page styled enough?
+    any other concerns?
+    implement categories
+*/
+@import url(css/bootstrap.css);
+@import url(https://bootswatch.com/cosmo/bootstrap.css);
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.checkout_cart .header th, tr.product_row, .wpsc_checkout_table_totals {
+    font-size: 1.8rem;
+}
+
+#checkout_page_container {
+    width: 100%;
+}
+
+#checkout_page_container h3 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+footer {
+    margin: 20px 0 0 10px;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    /*color: #2780e3;*/
+}
+h2.prodtitle {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: 2.3rem;
+    width: 100%;
+}
+
+.jumbotron {
+    background-color: #222222;
+}
+
+.nav-block {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.page {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.page-center {    
+    width: 87%;
+    margin: 0 auto;
+}
+
+.page p {
+    margin: 0;
+    float: left;
+}
+
+.page p img.img-responsive {
+    padding: 5px; 
+    width: 330px;
+}
+
+.polaroid {
+    background-color: #E6E6E6;
+    padding: 7px;
+    box-sizing: border-box;
+    height: 270px;
+    width: 220px;
+    overflow: hidden;
+}
+
+.polaroid .productcol {
+    padding-top: 15px;
+}
+
+.polaroid-tile {
+    padding: 5px;
+}
+
+.polaroid-text {
+    width: 220px;
+    margin: 0 auto;
+    padding-left: 7px;
+    padding-right: 7px;
+    box-sizing: border-box;
+}
+
+.pricedisplay {
+    text-align: right;
+}
+
+.col-md-3 {
+    width: 23%;
+}
+
+p.tagline {
+    color: #E6E6E6;
+    font-size: 2.0rem;
+}
+
+#shippingSameBilling {
+    width: 25px;
+    height: 25px;
+}
+
+.single_product_display form.product_form input.btn-primary {
+    padding: 10px 18px; 
+    line-height: 2.1rem; 
+    font-size: 1.6rem;
+}
+
+th, td, tr {
+    padding: 5px;
+    min-width: 70px;
+}
+
+ul.wpsc_checkout_table {
+    list-style: none;
+    padding-left: 0px;
+    
+        margin: 0 auto;
+        width: 310px;
+}
+
+.wpsc_default_product_list .wpsc_product_title, .wpsc_default_product_list .pricedisplay {
+    font-family: 'Permanent Marker';
+    
+    padding: 0;
+    margin: 0;
+}
+
+.wpsc_email_address {
+    background-color:  #E6E6E6;
+    padding: 5px;
+    margin: 5px;
+}
+
+.wpsc_default_product_list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 83%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wpsc_default_product_list .polaroid {
+    float: none;
+}
+
+/*--------------------------md-size--------------------------------------------*/
+@media screen and (max-width: 1199px) {
+     .wpsc_default_product_list {
+        width: 76%;
+    }
+    
+}
+
+/*--------------------------sm-size--------------------------------------------*/
+@media screen and (max-width: 991px) {
+     .wpsc_default_product_list {
+        width: 67%;
+    }
+    #wpsc_shopping_cart_container {
+        margin: 0 auto;
+    }
+    ul.wpsc_checkout_table {
+        margin: 0 auto;
+        width: 310px;
+    }
+    
+}
+
+/*--------------------------xs-size--------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .checkout_cart .header th, tr.product_row, .wpsc_checkout_table_totals {
+        font-size: 1.4rem;
+    }
+    #checkout_page_container {
+        max-width: 100%;
+    }
+    #checkout_page_container h3 {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+    #checkout_page_container div.wpsc_make_purchase {
+        float: none;
+        width: 100px;
+        margin: 0 auto;
+    }
+    
+    h4 {
+        text-align: center;
+    }
+    h1 a .img-responsive {
+        max-width: 150px;
+    }
+    .nav-block {
+        /*display: flex;
+        justify-content: center;
+        align-items: center;*/
+        padding-top: 0px;
+    }
+    nav.mobile {
+        position:relative;
+        overflow:visible;
+        width: 100%;
+    }
+    nav.mobile .menu {
+        display:none;
+        margin:0;
+        width: 100%;
+        padding-top: 10px;
+    }
+    nav.mobile li {
+        width: 100%;
+    }
+
+nav.mobile:hover .menu { display:block; }
+    
+    .tagline {
+        display: none;
+    }
+    .wpsc_default_product_list {
+        width: 230px;
+    }
+}
